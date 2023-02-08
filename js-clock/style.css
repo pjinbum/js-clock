@@ -1,99 +1,128 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
 
-header{
+header {
   position: relative;
   z-index: 100;
   display: flex;
   justify-content: space-between;
   background-color: transparent;
-  
+
 }
-body{
+
+body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-nav img{
+nav img {
+  margin-top: 20px;
   width: 100px;
   margin-left: 30px;
 }
 
-.menu-list{
+.menu-list {
   display: flex;
   align-items: center;
 }
 
-.menu-list ul{
+.menu-list ul {
   display: flex;
- 
+
 }
 
-.menu-list ul>li>a{
+.menu-list ul>li>a {
+  position: relative;
   margin: 0 30px;
   font-weight: 700;
-  color:black
+  color: black;
+
 }
 
-main{
+.menu-list ul>li>a::after {
+  content: '';
   position: absolute;
-  top:0;
+  left: 0;
+  bottom: -0.5rem;
+  height: 3px;
+  width: calc(100%);
+  background: #000;
+  transform: scaleX(0);
+  transition: all 500ms ease;
+}
+
+
+.menu-list ul>li>a:hover::after {
+  /* content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  height: 3px;
+  width: calc(100%);
+  background: #000; */
+  transform: scaleX(1);
+  /* transform-origin: left */
+
 
 }
 
-main>img{
+main {
+  position: absolute;
+  top: 0;
+
+}
+
+main>img {
   width: 100vw;
   height: 100vh;
   transition: all 400ms ease-in-out;
 }
 
-.phonimg{
+.phonimg {
   width: 900px;
   height: 600px;
   position: absolute;
-  top:270px;
+  top: 270px;
   right: 0;
 }
 
-.phonimg img{
+.phonimg img {
   transition: all 400ms ease-in-out;
 }
 
-.lolem{
+.lolem {
   position: absolute;
   top: 300px;
-  left: 50px;
-  
-
+  left: 100px;
 }
 
-.lolem p{
+.lolem p {
   font-size: 70px;
   font-weight: 700;
 }
 
-.btn-image{
+.btn-image {
   margin-top: -100px;
 }
 
-.btn-image ul{
+.btn-image ul {
   display: flex;
   justify-content: center;
 }
 
-.btn-image ul li{
+.btn-image ul li {
   text-align: center;
   width: 400px;
   height: 30px;
@@ -104,42 +133,38 @@ main>img{
 
 }
 
-.btn-image ul li:hover{
+.btn-image ul li:hover {
   background-color: #000;
 }
 
-.btn-image ul li>a{
-  color:#000
+.btn-image ul li>a {
+  color: #000;
 }
 
-.btn-image ul li>a:hover{
+.btn-image ul li>a:hover {
   color: #fff;
 }
 
-.timeer{
+.timeer {
   position: absolute;
-  top:480px;
-  right: 350px;
-  width: 300px;
+  top: 480px;
+  right: 300px;
+  width: 400px;
   height: 100px;
   background-color: transparent;
-  
+
 }
 
-.timeer h1{
+.timeer h1 {
   font-size: 60px;
 }
 
-
-
 body {
-	font-family: Orbitron, sans-serif;
+  font-family: Orbitron, sans-serif;
 }
-
 
 @font-face {
-	font-family: Orbitron;
-	src: url(./webfonts/Orbitron-Regular.eot);
-	src: url(./webfonts/Orbitron-Regular.woff) format("woff");
+  font-family: Orbitron;
+  src: url(./webfonts/Orbitron-Regular.eot);
+  src: url(./webfonts/Orbitron-Regular.woff) format("woff");
 }
-

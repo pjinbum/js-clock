@@ -119,7 +119,7 @@ section em {
   right: -300px;
   width: 1200px;
   height: 800px;
-  background-image: url(./image/phone_morning.png);
+  /* background-image: url(./image/phone_morning.png); */
 }
 
 /* 1.positon
@@ -138,7 +138,7 @@ section em {
   color: #333;
   line-height: 310px;
   padding-left: 60px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 nav{
@@ -194,7 +194,7 @@ nav li.on a{
   
 }
 #wrapper.morning #phone {
-  background-image: url(./image/bg_morning.jpg);
+  background-image: url(./image/phone_morning.png);
 
 }
 #wrapper.afternoon{
@@ -203,7 +203,7 @@ nav li.on a{
 }
 
 #wrapper.afternoon #phone {
-  background-image: url(./image/bg_afternoon.jpg);
+  background-image: url(./image/phone_afternoon.png);
 
 }
 
@@ -213,7 +213,7 @@ nav li.on a{
 }
 
 #wrapper.evening #phone {
-  background-image: url(./image/bg_evening.jpg);
+  background-image: url(./image/phone_evening.png);
 
 }
 

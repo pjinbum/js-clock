@@ -79,3 +79,5 @@ for(let i = 0; i < name.length; i++) {
 name.forEach(function(yejin){
   console.log(yejin);
 })
+
+

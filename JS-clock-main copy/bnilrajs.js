@@ -33,3 +33,12 @@ name.forEach(function (yejin) {
   console.log(yejin);
   
 })
+
+
+let jin = {'do':1 , 'le':2 , 'mi':3 , 'pa':4 , 'sol':5};
+for(key in jin){
+  console.log(key);
+  console.log(jin[key]);
+  
+}
+
